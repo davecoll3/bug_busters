@@ -40,39 +40,91 @@
   </div>
   <!-- Game Buttons End -->
 
-
-  <!-- Game Scoreboard -->
-  <div class="container">
-    <div class="row">
-      <div class="col-3 game">
-        <p>Score: 0</p>
-      </div>
-      <div class="col-6 game">
-        <p>Level:
-          <label for="beginner"><i class="fa-solid fa-plane"></i></label>
-          <input type="radio" id="beginner" name="level" value="beg" checked>
-          <label for="intermediate"><i class="fa-solid fa-jet-fighter"></i></label> 
-          <input type="radio" id="intermediate" name="level" value="int">
-          <label for="expert"><i class="fa-solid fa-shuttle-space"></i></label>
-          <input type="radio" id="expert" name="level" value="exp">
-        </p>
-      </div>
-      <div class="col-3 game">
-        <p>Time: 60</p>
+  <div class="console">
+    <!-- Game Scoreboard -->
+    <div class="container game-info">
+      <div class="row row-cols-3">
+        <div class="col-3 scoreboard">
+          <p>SCORE: 0</p>
+        </div>
+        <div class="col-6 scoreboard">
+          <p>LEVEL:
+            <label for="beginner"><i class="fa-solid fa-plane"></i></label>
+            <input type="radio" id="beginner" name="level" value="beg" checked>
+            <label for="intermediate"><i class="fa-solid fa-jet-fighter"></i></label> 
+            <input type="radio" id="intermediate" name="level" value="int">
+            <label for="expert"><i class="fa-solid fa-shuttle-space"></i></label>
+            <input type="radio" id="expert" name="level" value="exp">
+          </p>
+        </div>
+        <div class="col-3 scoreboard">
+          <p>TIME: 60</p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Game Scoreboard End -->
+    <!-- Game Scoreboard End -->
 
-
-  <!-- Game Playdeck -->
-  <div class="container">
-    <div class="row game">
-
+    <!-- Game Playdeck -->
+    <div class="container game">
+      <div class="row" id="line1">
+        <div class="col-3 block" #blk1>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk2>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk3>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk4>
+          <p>&lt;/&gt;</p>
+        </div>
+      </div>
+      <div class="row" id="line2">
+        <div class="col-3 block" #blk5>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk6>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk7>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk8>
+          <p>&lt;/&gt;</p>
+        </div>
+      </div>
+      <div class="row" id="line3">
+        <div class="col-3 block" #blk9>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk10>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk11>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk12>
+          <p>&lt;/&gt;</p>
+        </div>
+      </div>
+      <div class="row" id="line4">
+        <div class="col-3 block" #blk13>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk14>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk15>
+          <p>&lt;/&gt;</p>
+        </div>
+        <div class="col-3 block" #blk16>
+          <p>&lt;/&gt;</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- Game Playdeck End -->
-
+    <!-- Game Playdeck End -->
+  </div>  
 
   <!-- Footer -->
   <footer>
