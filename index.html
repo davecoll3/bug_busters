@@ -33,15 +33,45 @@
   <!-- Header End-->
 
 
-  <!-- Main Content -->
+  <!-- Game Buttons -->
   <div class="buttons">
     <button type="button" class="btn btn-info">INSTRUCTIONS</button>
     <button type="button" class="btn btn-danger">START</button>
   </div>
-  <div>
+  <!-- Game Buttons End -->
 
+
+  <!-- Game Scoreboard -->
+  <div class="container">
+    <div class="row">
+      <div class="col-3 game">
+        <p>Score: 0</p>
+      </div>
+      <div class="col-6 game">
+        <p>Level:
+          <label for="beginner"><i class="fa-solid fa-plane"></i></label>
+          <input type="radio" id="beginner" name="level" value="beg" checked>
+          <label for="intermediate"><i class="fa-solid fa-jet-fighter"></i></label> 
+          <input type="radio" id="intermediate" name="level" value="int">
+          <label for="expert"><i class="fa-solid fa-shuttle-space"></i></label>
+          <input type="radio" id="expert" name="level" value="exp">
+        </p>
+      </div>
+      <div class="col-3 game">
+        <p>Time: 60</p>
+      </div>
+    </div>
   </div>
-  <!-- Main Content End -->
+  <!-- Game Scoreboard End -->
+
+
+  <!-- Game Playdeck -->
+  <div class="container">
+    <div class="row game">
+
+    </div>
+  </div>
+  <!-- Game Playdeck End -->
 
 
   <!-- Footer -->

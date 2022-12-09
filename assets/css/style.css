@@ -45,6 +45,13 @@ h1 {
   margin: 10px;
 }
 
+  /* ==========
+GAME
+========== */
+.game {
+  border: #A9A9A9 solid 3px;
+}
+
 /* ==========
 BUTTONS
 ========== */
