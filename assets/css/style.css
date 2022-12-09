@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Press+Start+2P&display=swap');
 
 /* ==========
 GENERAL
@@ -29,6 +29,15 @@ ul {
 }
 
 /* ==========
+NAVBAR
+========== */
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  color: #A9A9A9;
+}
+
+/* ==========
 HEADER
 ========== */
 h1 {
@@ -55,4 +64,18 @@ BUTTONS
 .btn-danger {
   border-color: #fff;
   margin: 6px;
+}
+
+/* ==========
+FOOTER
+========== */
+
+footer {
+  text-align: center;
+  margin-top: auto;
+}
+
+.copyright {
+  font-family: 'Orbitron', sans-serif;
+  color: #A9A9A9;
 }
