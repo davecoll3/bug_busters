@@ -19,7 +19,7 @@
 
 <body>
 
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand ms-auto" href="#">dc games</a>
     </div>
@@ -35,19 +35,34 @@
 
   <!-- Game Buttons -->
   <div class="buttons">
-    <button type="button" class="btn btn-info">INSTRUCTIONS</button>
-    <button type="button" class="btn btn-danger">START</button>
+    <button type="button" class="btn btn-primary" id="instructions">INSTRUCTIONS</button>
+    <button type="button" class="btn btn-primary" id="start">START</button>
   </div>
   <!-- Game Buttons End -->
 
+  <!-- Modal Overlay -->
+  <div class="modalOverlay">
+    <div class="modalContent">
+      <h2>&lt;h2&gt;INSTRUCTIONS&lt;/h2&gt;</h2>
+      <p>
+        <span class="p-tag">&lt;p&gt;</span>We need you to save our code from the dreaded bugs. 
+        You have 60 seconds to find and squash as many bugs as you can.<span class="p-tag">&lt;/p&gt;</span>
+      </p>
+        <ul>
+          <li>Select your level.</li>
+          <li>Click the <strong>“START”</strong> button to begin.</li>
+          <li>As the bugs appear, click on them to squash them and earn points.</li>
+        </ul>
+        <button type="button" class="btn btn-primary" id="close">CLOSE</button>
+    </div>
+  </div>
+  <!-- Modal Overlay End -->
+
   <div class="console">
     <!-- Game Scoreboard -->
-    <div class="container game-info">
-      <div class="row row-cols-3">
-        <div class="col-3 scoreboard">
-          <p>SCORE: 0</p>
-        </div>
-        <div class="col-6 scoreboard">
+    <div class="container game">
+      <div class="row scoreboard">
+        <div class="col-12" id="playdeck">
           <p>LEVEL:
             <label for="beginner"><i class="fa-solid fa-plane"></i></label>
             <input type="radio" id="beginner" name="level" value="beg" checked>
@@ -57,68 +72,49 @@
             <input type="radio" id="expert" name="level" value="exp">
           </p>
         </div>
-        <div class="col-3 scoreboard">
+        <div class="col-6" id="playdeck">
+          <p>SCORE: 0</p>
+        </div>
+        <div class="col-6" id="playdeck">
           <p>TIME: 60</p>
         </div>
       </div>
-    </div>
-    <!-- Game Scoreboard End -->
-
-    <!-- Game Playdeck -->
-    <div class="container game">
-      <div class="row" id="line1">
-        <div class="col-3 block" #blk1>
+  
+      <div class="row" id="playdeck">
+        <div class="block" #blk1>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk2>
+        <div class="block" #blk2>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk3>
+        <div class="block" #blk3>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk4>
+        <div class="block" #blk4>
           <p>&lt;/&gt;</p>
         </div>
-      </div>
-      <div class="row" id="line2">
-        <div class="col-3 block" #blk5>
+        <div class="block" #blk5>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk6>
+        <div class="block" #blk6>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk7>
+        <div class="block" #blk7>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk8>
+        <div class="block" #blk8>
           <p>&lt;/&gt;</p>
         </div>
-      </div>
-      <div class="row" id="line3">
-        <div class="col-3 block" #blk9>
+        <div class="block" #blk9>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk10>
+        <div class="block" #blk10>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk11>
+        <div class="block" #blk11>
           <p>&lt;/&gt;</p>
         </div>
-        <div class="col-3 block" #blk12>
-          <p>&lt;/&gt;</p>
-        </div>
-      </div>
-      <div class="row" id="line4">
-        <div class="col-3 block" #blk13>
-          <p>&lt;/&gt;</p>
-        </div>
-        <div class="col-3 block" #blk14>
-          <p>&lt;/&gt;</p>
-        </div>
-        <div class="col-3 block" #blk15>
-          <p>&lt;/&gt;</p>
-        </div>
-        <div class="col-3 block" #blk16>
+        <div class="block" #blk12>
           <p>&lt;/&gt;</p>
         </div>
       </div>
@@ -134,11 +130,17 @@
   </footer>
   <!-- Footer End -->
 
+  <script>
+    $(document).ready(function(){  
+      alert("Ready!");  
+    });
+  </script>
 
   <!-- JavaScript Links -->
-  <script src="assets/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <!-- JavaScript Links End -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  JavaScript Links End -->
 
 </body>
 
