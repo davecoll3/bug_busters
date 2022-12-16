@@ -21,7 +21,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100%;
-  background-color: rgb(212, 162, 162);
+  background-color: rgb(243, 175, 175);
   color: #fff;
 }
   
@@ -60,7 +60,7 @@ BUTTONS
   align-items: center;
 }
 
-.btn-primary {
+.btn {
   margin: 6px;
 }
 
@@ -184,7 +184,7 @@ GAME
   margin: 0;
 }
 
-.block {
+.blocks {
   color: #000;
   background-color: #A9A9A9;
   /*font-size: 4vmin;*/
