@@ -21,7 +21,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100%;
-  background-color: #000;
+  background-color: rgb(212, 162, 162);
   color: #fff;
 }
   
@@ -72,16 +72,22 @@ BUTTONS
 
 #instructions:hover {
   background-color: #4B0082;
+  border-color: #8A2BE2;
 }
 
-#start {
+.start-reset {
   color: #fff;
   background-color: #FF0000;
   border-color: #FF0000;
 }
 
-#start:hover {
+.start-reset:hover {
   background-color: #8B0000;
+  border-color: #FF0000;
+}
+
+#reset {
+  display: none;
 }
 
 /* ==========
@@ -137,9 +143,6 @@ ul {
   visibility: visible;
 }
 
-
-
-
 /* ==========
 GAME
 ========== */
@@ -169,6 +172,9 @@ GAME
 #playdeck {
   border: #202020 solid;
   border-width: 3px;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
 }
 
 .game {
@@ -181,13 +187,17 @@ GAME
 .block {
   color: #000;
   background-color: #A9A9A9;
-  font-size: 4vmin;
+  /*font-size: 4vmin;*/
   width: 20vmin;
   height: 20vmin;
-  line-height: 20vmin;
+  /*line-height: 20vmin;*/
   border: #A9A9A9 solid 3px;
   border-radius: 50%;
   margin: 10px auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* ==========

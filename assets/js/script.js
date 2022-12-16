@@ -1,5 +1,4 @@
-console.log("Hello World!!!");
-
+//Game instructions modal overlay
 $(document).ready(function(){
 
   $('#instructions').click(function(){
@@ -10,3 +9,4 @@ $(document).ready(function(){
   });
 
 });
+
