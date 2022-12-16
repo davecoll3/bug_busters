@@ -21,7 +21,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100%;
-  background-color: rgb(243, 175, 175);
+  background-color: #000;
   color: #fff;
 }
   
@@ -184,7 +184,7 @@ GAME
   margin: 0;
 }
 
-.blocks {
+.block {
   color: #000;
   background-color: #A9A9A9;
   /*font-size: 4vmin;*/
